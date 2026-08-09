@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games | k6english</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="k6english.html"><img class="brand-icon" src="assets/k6-cap-icon.png" alt="K6 graduation cap"><span>k6english</span></a>
+      <div class="nav-links">
+        <a href="k6english.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="reading-materials.html">Reading</a>
+        <a class="active" href="games.html">Games</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="language-toggle" aria-label="Language switch"><a href="zh-games.html">中文</a><span>/</span><a class="active" href="games.html">English</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>Games</h1>
+      <p class="page-copy">A quick free vocabulary card game.</p>
+    </section>
+
+    <section class="game-section" aria-labelledby="game-title">
+      <div class="game-header">
+        <div>
+          <span class="eyebrow">K6 Word Cards</span>
+          <h2 id="game-title">Vocabulary Quiz</h2>
+        </div>
+        <div class="game-score"><span data-round>Round 1</span><strong data-score>0</strong><span>correct</span></div>
+      </div>
+
+      <div class="mode-switch" aria-label="Quiz mode">
+        <button class="active" type="button" data-game-mode="zh-en">Chinese → English</button>
+        <button type="button" data-game-mode="en-zh">English → Chinese</button>
+      </div>
+
+      <div class="quiz-layout">
+        <div class="flashcard-wrap">
+          <button class="flashcard" type="button" data-flashcard aria-label="Reveal the answer">
+            <span class="flashcard-face flashcard-front">
+              <span class="flashcard-label">Prompt</span>
+              <strong data-prompt></strong>
+              <span class="flashcard-hint" data-hint>Type the English word</span>
+            </span>
+            <span class="flashcard-face flashcard-back">
+              <span class="flashcard-label">Answer</span>
+              <strong data-answer></strong>
+              <span class="flashcard-hint">Tap again to return</span>
+            </span>
+          </button>
+          <button class="text-button" type="button" data-show-answer>Show answer</button>
+        </div>
+
+        <form class="quiz-form" data-quiz-form>
+          <label for="answer-input">Your answer</label>
+          <div class="answer-row">
+            <input id="answer-input" type="text" autocomplete="off" data-answer-input placeholder="Type your answer">
+            <button class="button primary" type="submit">Check</button>
+          </div>
+          <p class="quiz-feedback" data-feedback aria-live="polite"></p>
+          <p class="game-note">A new card appears after each correct answer. Missed it? Keep trying.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="celebration" data-celebration aria-live="polite">
+    <div class="confetti-field" aria-hidden="true">
+      <span data-confetti></span><span data-confetti></span><span data-confetti></span><span data-confetti></span>
+      <span data-confetti></span><span data-confetti></span><span data-confetti></span><span data-confetti></span>
+      <span data-confetti></span><span data-confetti></span><span data-confetti></span><span data-confetti></span>
+    </div>
+    <img src="assets/k6-cap-icon.png" alt="K6">
+    <strong>Correct!</strong>
+  </div>
+
+  <script src="games.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小游戏 | k6english</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="zh-k6english.html"><img class="brand-icon" src="assets/k6-cap-icon.png" alt="K6 graduation cap"><span>k6english</span></a>
+      <div class="nav-links">
+        <a href="zh-k6english.html">首页</a>
+        <a href="zh-courses.html">课程</a>
+        <a href="zh-reading.html">阅读</a>
+        <a class="active" href="zh-games.html">小游戏</a>
+        <a href="zh-contact.html">联系</a>
+      </div>
+      <div class="language-toggle" aria-label="语言切换"><a class="active" href="zh-games.html">中文</a><span>/</span><a href="games.html">English</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>小游戏</h1>
+      <p class="page-copy">免费的词汇卡小游戏。</p>
+    </section>
+
+    <section class="game-section" aria-labelledby="game-title">
+      <div class="game-header">
+        <div>
+          <span class="eyebrow">K6 词汇卡</span>
+          <h2 id="game-title">词汇小测</h2>
+        </div>
+        <div class="game-score"><span data-round>第 1 题</span><strong data-score>0</strong><span>答对</span></div>
+      </div>
+
+      <div class="mode-switch" aria-label="小测模式">
+        <button class="active" type="button" data-game-mode="zh-en">中译英</button>
+        <button type="button" data-game-mode="en-zh">英译中</button>
+      </div>
+
+      <div class="quiz-layout">
+        <div class="flashcard-wrap">
+          <button class="flashcard" type="button" data-flashcard aria-label="显示答案">
+            <span class="flashcard-face flashcard-front">
+              <span class="flashcard-label">题目</span>
+              <strong data-prompt></strong>
+              <span class="flashcard-hint" data-hint>输入英文单词</span>
+            </span>
+            <span class="flashcard-face flashcard-back">
+              <span class="flashcard-label">答案</span>
+              <strong data-answer></strong>
+              <span class="flashcard-hint">再次点击返回</span>
+            </span>
+          </button>
+          <button class="text-button" type="button" data-show-answer>显示答案</button>
+        </div>
+
+        <form class="quiz-form" data-quiz-form>
+          <label for="answer-input">你的答案</label>
+          <div class="answer-row">
+            <input id="answer-input" type="text" autocomplete="off" data-answer-input placeholder="输入答案">
+            <button class="button primary" type="submit">检查</button>
+          </div>
+          <p class="quiz-feedback" data-feedback aria-live="polite"></p>
+          <p class="game-note">答对后会出现新的词卡；答错了也没关系，再试一次。</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="celebration" data-celebration aria-live="polite">
+    <div class="confetti-field" aria-hidden="true">
+      <span data-confetti></span><span data-confetti></span><span data-confetti></span><span data-confetti></span>
+      <span data-confetti></span><span data-confetti></span><span data-confetti></span><span data-confetti></span>
+      <span data-confetti></span><span data-confetti></span><span data-confetti></span><span data-confetti></span>
+    </div>
+    <img src="assets/k6-cap-icon.png" alt="K6">
+    <strong>答对了！</strong>
+  </div>
+
+  <script src="games.js"></script>
+</body>
+</html>
