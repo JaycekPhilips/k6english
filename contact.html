@@ -29,7 +29,16 @@
 
     <section>
       <div class="contact profile-card">
-        <img class="profile-photo" src="assets/jackp-profile.png" alt="Portrait of JackP">
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="assets/jackp-profile.png" alt="Portrait of JackP">
+          <div class="like-badge">
+            <button class="like-button" type="button" data-like-button aria-label="Like JackP">
+              <span aria-hidden="true">♥</span>
+              <span>Like JackP</span>
+            </button>
+            <strong data-like-count>0</strong>
+          </div>
+        </div>
         <div class="profile-bio">
           <h2 class="profile-heading">
             <span class="profile-symbol" aria-hidden="true">◆</span>
@@ -43,10 +52,15 @@
             <li>Have serviced Yangtai Primary School, Yunnan; Banwan Dreamer School, Guizhou</li>
           </ul>
           <a class="email" href="mailto:jackcipher324@outlook.com">jackcipher324@outlook.com</a>
+          <div class="site-stat" aria-live="polite">
+            <span>Website views</span>
+            <strong data-site-views>0</strong>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <script src="site-stats.js"></script>
 </body>
 </html>
 
