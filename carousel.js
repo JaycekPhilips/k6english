@@ -34,5 +34,5 @@
     }, 130);
   }
 
-  timer = window.setInterval(() => render(current + 1), 5000);
+  timer = window.setInterval(() => render(current + 1), 3000);
 })();
