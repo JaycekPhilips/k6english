@@ -638,23 +638,6 @@ h1 {
   font-size: 0.9rem;
 }
 
-.site-stat {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 8px;
-  align-self: flex-start;
-  margin-top: 18px;
-  border-top: 1px solid var(--line);
-  padding-top: 12px;
-  color: var(--muted);
-  font-size: 0.94rem;
-}
-
-.site-stat strong {
-  color: var(--blue-deep);
-  font-size: 1.08rem;
-}
-
 .profile-bio {
   display: flex;
   flex-direction: column;
