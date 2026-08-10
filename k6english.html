@@ -33,15 +33,16 @@
             Free elementary English resources for learners, teachers, and families.
           </p>
         </div>
-        <div class="hero-media" aria-label="Rural school and mountain village landscape">
-          <img src="assets/k6english-cover-village.png" alt="Mountain village and school courtyard in rural China">
-          <div class="quick-panel">
-            <strong>Quick access</strong>
-            <div class="quick-list">
-              <a href="courses.html">Courses</a>
-              <a href="reading-materials.html">Reading</a>
-              <a href="games.html">Games</a>
-            </div>
+        <div class="hero-media home-carousel" data-carousel aria-label="Rural school and mountain village landscape">
+          <div class="carousel-viewport">
+            <img class="carousel-image" data-carousel-image src="assets/k6english-cover-village.png" alt="Mountain village and school courtyard in rural China">
+            <button class="carousel-arrow carousel-prev" type="button" data-carousel-prev aria-label="Previous image"><span aria-hidden="true">&#8249;</span></button>
+            <button class="carousel-arrow carousel-next" type="button" data-carousel-next aria-label="Next image"><span aria-hidden="true">&#8250;</span></button>
+          </div>
+          <div class="carousel-dots" role="tablist" aria-label="Choose an image">
+            <button class="carousel-dot is-active" type="button" data-carousel-dot="0" role="tab" aria-label="Show image 1" aria-selected="true"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="1" role="tab" aria-label="Show image 2" aria-selected="false"></button>
+            <button class="carousel-dot" type="button" data-carousel-dot="2" role="tab" aria-label="Show image 3" aria-selected="false"></button>
           </div>
         </div>
       </div>
@@ -82,6 +83,7 @@
       </div>
     </section>
   </main>
+  <script src="carousel.js"></script>
   <script src="site-stats.js"></script>
 </body>
 </html>
