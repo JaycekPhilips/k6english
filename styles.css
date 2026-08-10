@@ -1003,10 +1003,14 @@ h1 {
 }
 
 .celebration strong {
-  color: #16803c;
+  color: #16803c !important;
   padding: 8px 18px;
   font-size: 1.2rem;
   text-shadow: 0 2px 8px rgba(10, 36, 66, 0.55);
+}
+
+.celebration-message {
+  color: #16803c !important;
 }
 
 @keyframes cap-pop {
