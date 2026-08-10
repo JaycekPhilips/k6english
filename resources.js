@@ -738,15 +738,6 @@
                            "downloadName":  "Oh-the-Places-Youll-Go.pdf"
                        },
                        {
-                           "title":  "Snow White and the Seven Dwarfs",
-                           "fileName":  "Snow White and the Seven Dwarfs (Regis Maine.) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-                           "url":  "resources/storybooks/Snow White and the Seven Dwarfs (Regis Maine.) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-                           "size":  "48.38 MB",
-                           "type":  "PDF",
-                           "sourceFolder":  "绘本\\绘本选本",
-                           "downloadName":  "Snow-White-and-the-Seven-Dwarfs.pdf"
-                       },
-                       {
                            "title":  "The Cat in the Hat",
                            "fileName":  "THE-CAT-IN-THE-HAT.pdf",
                            "url":  "resources/storybooks/THE-CAT-IN-THE-HAT.pdf",
@@ -763,15 +754,6 @@
                            "type":  "PDF",
                            "sourceFolder":  "绘本\\绘本选本",
                            "downloadName":  "The-Lion-King.pdf"
-                       },
-                       {
-                           "title":  "The Little Mermaid",
-                           "fileName":  "The Little Mermaid (Anderson Tom) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-                           "url":  "resources/storybooks/The Little Mermaid (Anderson Tom) (z-library.sk, 1lib.sk, z-lib.sk).pdf",
-                           "size":  "51.35 MB",
-                           "type":  "PDF",
-                           "sourceFolder":  "绘本\\绘本选本",
-                           "downloadName":  "The-Little-Mermaid.pdf"
                        },
                        {
                            "title":  "The Very Hungry Caterpillar",
