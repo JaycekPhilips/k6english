@@ -3,7 +3,6 @@
   if (!carousel) return;
 
   const image = carousel.querySelector("[data-carousel-image]");
-  const dots = Array.from(carousel.querySelectorAll("[data-carousel-dot]"));
   const isChinese = document.documentElement.lang === "zh-CN";
   const slides = [
     {
@@ -33,35 +32,7 @@
       image.alt = slide.alt;
       image.classList.remove("is-changing");
     }, 130);
-
-    dots.forEach((dot, dotIndex) => {
-      const active = dotIndex === current;
-      dot.classList.toggle("is-active", active);
-      dot.setAttribute("aria-selected", String(active));
-    });
   }
 
-  function restartTimer() {
-    window.clearInterval(timer);
-    timer = window.setInterval(() => render(current + 1), 5000);
-  }
-
-  carousel.querySelector("[data-carousel-prev]").addEventListener("click", () => {
-    render(current - 1);
-    restartTimer();
-  });
-
-  carousel.querySelector("[data-carousel-next]").addEventListener("click", () => {
-    render(current + 1);
-    restartTimer();
-  });
-
-  dots.forEach((dot) => {
-    dot.addEventListener("click", () => {
-      render(Number(dot.dataset.carouselDot));
-      restartTimer();
-    });
-  });
-
-  restartTimer();
+  timer = window.setInterval(() => render(current + 1), 5000);
 })();
