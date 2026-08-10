@@ -1003,7 +1003,7 @@ h1 {
 }
 
 .celebration strong {
-  color: var(--gold-light);
+  color: #16803c;
   padding: 8px 18px;
   font-size: 1.2rem;
   text-shadow: 0 2px 8px rgba(10, 36, 66, 0.55);
